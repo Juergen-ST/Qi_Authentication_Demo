@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:requireDeviceUnlock="false"
+    tools:targetApi="kitkat"
+    >
+    <aid-group
+        android:category="other"
+        tools:targetApi="kitkat"
+        >
+        <aid-filter android:name="A000000096F0FF7F01"/>
+    </aid-group>
+</host-apdu-service>

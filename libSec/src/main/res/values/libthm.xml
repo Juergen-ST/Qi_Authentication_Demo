@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ThmLib.Drk" parent="Theme.AppCompat.NoActionBar">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+        <item name="textColorError">@color/matPnkA100</item>
+        <item name="colBkgCmp">@color/matCmpDrk</item>
+        <item name="colBkgErr">@color/matPnk900</item>
+        <item name="colorAccent">@color/colAcc</item>
+        <item name="textColorPrimary">@color/matWht</item>
+        <item name="textColorSecondary">@color/txtSec</item>
+        <item name="txtColBar">@color/matWht</item>
+        <item name="txtColDis">@color/matWht30</item>
+    </style>
+    <style name="ThmLib" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="textColorError">@color/matPnkA100</item>
+        <item name="colBkgCmp">@color/matCmpDrk</item>
+        <item name="colBkgErr">@color/matPnk900</item>
+        <item name="colorAccent">@color/colAcc</item>
+        <item name="textColorPrimary">@color/matBlk87</item>
+        <item name="textColorSecondary">@color/matBlk54</item>
+        <item name="txtColBar">@color/matWht</item>
+        <item name="txtColDis">@color/matBlk38</item>
+    </style>
+    <style name="ThmLib.Inv">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ThmLib.Inv.Wak">
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="TxtStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@color/matBlk54</item>
+    </style>
+    <style name="TxtLab" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@dimen/lib_lab_txt</item>
+    </style>
+    <style name="PrgBarWh">
+        <item name="colorAccent">@color/matWht</item>
+    </style>
+    <style name="TxtEdit">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">?attr/colorButtonNormal</item>
+        <item name="boxCollapsedPaddingTop">@dimen/lib_pad_spc</item>
+    </style>
+</resources>

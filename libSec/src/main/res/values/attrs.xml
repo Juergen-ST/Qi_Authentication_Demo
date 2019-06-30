@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colBkgCmp" format="color" />
+    <attr name="colBkgErr" format="color" />
+    <attr name="textColorError" format="color" />
+    <attr name="textColorPrimary" format="color" />
+    <attr name="textColorSecondary" format="color" />
+    <attr name="txtColBar" format="color" />
+    <attr name="txtColDis" format="color" />
+    <declare-styleable name="ImgBtn">
+        <attr name="IcoTyp" format="enum">
+            <enum name="icon" value="0"/>
+            <enum name="logo" value="1"/>
+        </attr>
+        <attr name="maxSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="EditText">
+        <attr name="android:hint" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLines" />
+        <attr name="android:minLines" />
+    </declare-styleable>
+    <declare-styleable name="EditTxt">
+        <attr name="name" />
+        <attr name="typ"  />
+        <attr name="exit" />
+    </declare-styleable>
+    <declare-styleable name="SetBtn">
+        <attr name="popMen" format="integer" />
+    </declare-styleable>
+</resources>

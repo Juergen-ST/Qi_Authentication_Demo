@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:icon="@drawable/lib_more"
+        android:title="@string/lib_mor"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/itm_sav"
+                android:title="@string/plg_fst"
+                />
+        </menu>
+    </item>
+</menu>

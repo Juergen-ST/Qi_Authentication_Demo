@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/lib_lin_hgt"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:maxLines="2"
+    android:paddingLeft="@dimen/lib_pad_btn"
+    android:paddingRight="@dimen/lib_pad_btn"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    android:textColor="?attr/textColorPrimary"
+    tools:text="Text"
+    />

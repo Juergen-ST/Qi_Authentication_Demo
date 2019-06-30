@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/lib_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        tools:ignore="UseCompoundDrawables"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/lib_img_log"
+                android:layout_width="@dimen/lib_log_siz"
+                android:layout_height="@dimen/lib_log_siz"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/lib_pad_ver"
+                android:paddingRight="@dimen/lib_pad_ver"
+                tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
+            />
+            <TextView
+                android:id="@+id/lib_txt_tit"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/lib_frg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+    />
+</LinearLayout>

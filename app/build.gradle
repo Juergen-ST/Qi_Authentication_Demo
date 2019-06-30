@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.st.wpcath"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 6
+        versionName "1.1"
+        buildConfigField "long", "TIM", System.currentTimeMillis() + "L"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion = '28.0.3'
+}
+
+dependencies {
+    implementation project(':libSec')
+}

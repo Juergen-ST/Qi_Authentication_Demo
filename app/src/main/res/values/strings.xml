@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="ptx_flw">
+        <item >Simple flow</item>
+        <item >With caching</item>
+        <item >Challenge first</item>
+    </string-array>
+    <string name="app_nam">Qi Authentication Demo</string>
+    <string name="clr_cach">Clear cache</string>
+    <string name="ini_flow">Protocol flow</string>
+    <string name="emu_prx">Emulate PRx</string>
+    <string name="emu_ptx">Emulate PTx</string>
+    <string name="plg_fst">Plugfest 2</string>
+    <string name="prx_emu">Emulated PRx</string>
+    <string name="ptx_emu">Emulated PTx</string>
+    <string name="sav_log">Save log</string>
+    <string name="tst_dir">Directory</string>
+    <string name="tst_req">CHALLENGE</string>
+    <string name="tst_res">CHALLENGE_AUTH</string>
+</resources>

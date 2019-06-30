@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nfc_acc">#00a2ff</color>
+    <color name="nfc_blu_br">#0076bb</color>
+    <color name="nfc_blu">#002e5f</color>
+    <color name="nfc_dark">#001730</color>
+    <color name="nfc_gry9">#75787b</color>
+    <color name="nfc_gry7">#97999b</color>
+    <color name="nfc_gry3">#c8c9c7</color>
+    <color name="nfc_Gry">#939598</color>
+    <color name="nfc_blk">#000000</color>
+    <color name="nfc_wht">#ffffff</color>
+</resources>

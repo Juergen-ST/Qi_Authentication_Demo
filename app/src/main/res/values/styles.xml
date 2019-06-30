@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActBar" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/primary</item>
+        <item name="android:titleTextStyle">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:height">@dimen/lib_row_hgt</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorError">@color/colorAccent</item>
+    </style>
+    <style name="LibStart" parent="android:Theme.WithActionBar">
+        <item name="android:windowBackground">@drawable/start</item>
+        <item name="android:actionBarStyle">@style/ActBar</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wpc_acc">#67215F</color>
+    <color name="wpc_grn">#7baf20</color>
+    <color name="wpc_dark">#38503c</color>
+    <color name="primary">@color/wpc_grn</color>
+    <color name="primary_dark">@color/wpc_dark</color>
+    <color name="accent">@color/wpc_acc</color>
+    <color name="txtColDis">@color/matBlk38</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lib_lay_nam"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:padding="@dimen/txt_pad"
+    >
+    <com.st.libsec.EditTxt
+        android:id="@+id/lib_edit_nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+    />
+</android.support.design.widget.TextInputLayout>

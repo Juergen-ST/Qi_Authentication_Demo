@@ -1,0 +1,12 @@
+<resources>
+    <string name="err_sav">Cannot save log file!</string>
+    <string name="log_sav">%s is saved!</string>
+    <string name="qi_buy">Buy only Qi certified products!</string>
+    <string name="qi_chg_dev">Device will be charged!</string>
+    <string name="qi_chg_prx">\u0020will be charged!</string>
+    <string name="qi_chg_ptx">\u0020is charging!</string>
+    <string name="qi_chg_qiid">Qi charger with Qi ID:\u0020</string>
+    <string name="qi_fak_prx">Fake device!</string>
+    <string name="qi_fak_ptx">Fake charger!</string>
+    <string name="qi_ukn_man">Unknown manufacturer</string>
+</resources>

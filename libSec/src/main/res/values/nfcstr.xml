@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nfc_enable_nfc">Enable NFC!</string>
+    <string name="nfc_not_enabled">NFC was not enabled!</string>
+    <string name="nfc_key_launch">nfc_key_launch</string>    
+    <string name="nfc_block">Block</string>
+    <string name="nfc_wait_tag">Waiting for NFC tag</string>
+    <string name="nfc_acc_alw">Always</string>
+    <string name="nfc_acc_lck">Locked</string>
+    <string name="nfc_acc_nev">Never</string>
+    <string name="nfc_acc_prop">Proprietary</string>
+    <string name="nfc_acc_rfu">Reserved for future use</string>
+    <string name="nfc_act_do">Do the action</string>
+    <string name="nfc_act_edit">Open for editing</string>
+    <string name="nfc_act_rec">Recommended action</string>
+    <string name="nfc_act_rfu">Reserved action</string>
+    <string name="nfc_act_sav">Save for later</string>
+    <string name="nfc_afi_all">No specific application</string>
+    <string name="nfc_beam_set">Android beam</string>
+    <string name="nfc_beam">Enable Android beam!</string>
+    <string name="nfc_beam_snd">Needed to send data with NFC.</string>
+    <string name="nfc_beamed">NDEF Message was successfully beamed!</string>
+    <string name="nfc_blks">blocks</string>
+    <string name="nfc_byt_mem">Memory content</string>
+    <string name="nfc_byt_rem">Remaining bytes</string>
+    <string name="nfc_can_lck">This tag can be locked</string>
+    <string name="nfc_can_no_lck">This tag cannot be locked</string>
+    <string name="nfc_can_prt">This tag can be locked or write protected</string>
+    <string name="nfc_can_sw_lck">This tag can only be locked by software</string>
+    <string name="nfc_cc_mlc">Maximum command data for UpdateBinary</string>
+    <string name="nfc_cc_mle">Maximum response data for ReadBinary</string>
+    <string name="nfc_cc_siz">Size of Capability Container File</string>
+    <string name="nfc_cmd">Commands</string>
+    <string name="nfc_dat">Data from NFC tag</string>
+    <string name="nfc_des_acc_alw">NFC Forum tag is unlocked</string>
+    <string name="nfc_des_acc_lck">NFC Forum tag is locked</string>
+    <string name="nfc_des_acc_pin">NFC Forum tag is write protected</string>
+    <string name="nfc_des_acc_inv">Access conditions are invalid</string>
+    <string name="nfc_des_add_inf">Additional Information</string>
+    <string name="nfc_des_ccv1">for vicinity tags with one byte address mode</string>
+    <string name="nfc_des_dat_siz">Size of Data Area</string>
+    <string name="nfc_des_ecc_siz">Capability container with eight bytes</string>
+    <string name="nfc_des_img_siz">Image data size</string>
+    <string name="nfc_des_last_tlv">Last TLV object of Data Area</string>
+    <string name="nfc_des_read">Reads the content of a tag</string>
+    <string name="nfc_des_rfu">Reserved for Future Usage</string>
+    <string name="nfc_enc_aes">Encoded with AES 256 bits</string>
+    <string name="nfc_err">Errors</string>
+    <string name="nfc_err_carrier">Temporary carrier-specific constraints</string>
+    <string name="nfc_err_comm">Communication error\nTry it again</string>
+    <string name="nfc_err_dat">Error Data</string>
+    <string name="nfc_err_invalid">No valid tag content!</string>
+    <string name="nfc_err_lck">NFC Tag is locked\nUse another NFC Tag</string>
+    <string name="nfc_err_ndef">Invalid NDEF message</string>
+    <string name="nfc_err_ndef_larger_file">NDEF message larger than NDEF file</string>
+    <string name="nfc_err_no_crd">No contactless card</string>
+    <string name="nfc_err_no_ndef">No valid NDEF message found</string>
+    <string name="nfc_err_no_typ">Searched information type not found</string>
+    <string name="nfc_err_not_comp">Tag is not compatible!\nUse another tag</string>
+    <string name="nfc_err_not_form">Tag is not formated as NFC Forum tag</string>
+    <string name="nfc_err_perm">Permament memory constraints</string>
+    <string name="nfc_err_reason">Error Reason: %d</string>
+    <string name="nfc_err_rfu">Reserved Error Reason</string>
+    <string name="nfc_err_small">The NFC tag is too small!\n Maximum NDEF message size: %d bytes</string>
+    <string name="nfc_err_tag_lost">Communication aborted.\nTry it again!</string>
+    <string name="nfc_err_temp">Temporary memory constraints</string>
+    <string name="nfc_err_ukn_ic">Chip hardware is unknown</string>
+    <string name="nfc_err_ver">NFC Forum Tag version is not supported\nUse an older NFC Forum Tag</string>
+    <string name="nfc_ext_cc">Extended CC</string>
+    <string name="nfc_fil_dat">NFC file data</string>
+    <string name="nfc_fil_id">File Identifier</string>
+    <string name="nfc_fil_no_dat">No NFC file data</string>
+    <string name="nfc_fil_siz">File size</string>
+    <string name="nfc_fit_tag">NDEF Message fits on the NFC Forum Tag</string>
+    <string name="nfc_fin_lck">NFC Tag is successfully locked.</string>
+    <string name="nfc_fin_wrt">NDEF Message is successfully written on the NFC Tag.</string>
+    <string name="nfc_hlp">Read the phone´s user manual to detect the NFC antenna location at your phone. Usually this antenna is at the back of the phone which need to come near to the NFC tag. You will hear a sound when your phone is connecting with the NFC tag.</string>
+    <string name="nfc_hlp_beam">Read the user manuals of the phones to detect their NFC antenna locations. Usually these antennas are at the back of the phones which need to come together. You will hear a sound when the phones are connected.</string>
+    <string name="nfc_pix">Pixels</string>
+    <string name="nfc_hilay">Higher layer response data bytes</string>
+    <string name="nfc_hist">Historical bytes</string>
+    <string name="nfc_ic">Chip model name</string>
+    <string name="nfc_id">Individual number</string>
+    <string name="nfc_id_dyn">Dynamic generated NFCID</string>
+    <string name="nfc_id_prop">Proprietary fixed NFCID</string>
+    <string name="nfc_id_pseudo">Pseudo unique NFCID</string>
+    <string name="nfc_inp_typ">Requested input:\u0020</string>
+    <string name="nfc_key_nam">Key name</string>
+    <string name="nfc_kbd">NFC keyboard</string>
+    <string name="nfc_lck">Lock Tag</string>
+    <string name="nfc_man">Chip manufacturer</string>
+    <string name="nfc_mem">Memory data</string>
+    <string name="nfc_men">Menu</string>
+    <string name="nfc_mime">MIME text content</string>
+    <string name="nfc_msg">NDEF Message</string>
+    <string name="nfc_msg_emb">Embedded NDEF Message</string>
+    <string name="nfc_msg_inv">Invalid NDEF Message</string>
+    <string name="nfc_msg_len">NDEF Message length: %d bytes</string>
+    <string name="nfc_msg_no">No NDEF Message</string>
+    <string name="nfc_msg_siz">Size of NDEF Message</string>
+    <string name="nfc_form_fin">Tag is successfully formatted as an NFC Tag</string>
+    <string name="nfc_oob">Bluetooth OOB data</string>
+    <string name="nfc_pay">Payload</string>
+    <string name="nfc_pay_pwn">Password name</string>
+    <string name="nfc_pay_amnt">Amount</string>
+    <string name="nfc_pay_bic">BIC(SWIFT)</string>
+    <string name="nfc_pay_cat">Category</string>
+    <string name="nfc_pay_iban">IBAN</string>
+    <string name="nfc_pay_rcv">Receiver</string>
+    <string name="nfc_pay_sub">Subject</string>
+    <string name="nfc_pay_ver">Version</string>
+    <string name="nfc_pkg_nam">Package name of Android Appllication</string>
+    <string name="nfc_prt">Write protect</string>
+    <string name="nfc_rec">NDEF Record</string>
+    <string name="nfc_rec_aar">Android Application NDEF Record</string>
+    <string name="nfc_rec_act">Action NDEF Record</string>
+    <string name="nfc_rec_bt">MIME Bluetooth OOB NDEF Record</string>
+    <string name="nfc_rec_cr">Collision Resolution Record</string>
+    <string name="nfc_rec_err">Error Record</string>
+    <string name="nfc_rec_hs">Handover Select NDEF Record</string>
+    <string name="nfc_rec_ico">Icon NDEF Record</string>
+    <string name="nfc_rec_mime">MIME Text NDEF Record</string>
+    <string name="nfc_rec_sp">Smart Poster NDEF Record</string>
+    <string name="nfc_rec_txt">Text NDEF Record</string>
+    <string name="nfc_rec_ukn">Unknown NDEF Record</string>
+    <string name="nfc_rec_uri">URI NDEF Record</string>
+    <string name="nfc_rec_uri_typ">URI Type NDEF Record</string>
+    <string name="nfc_rec_id">ID field of NDEF Record</string>
+    <string name="nfc_rec_il">Length of ID field of NDEF Record</string>
+    <string name="nfc_rec_pl">Length of Payload field (4 bytes)</string>
+    <string name="nfc_rec_pls">Length of Payload field (1 byte)</string>
+    <string name="nfc_rec_pin">PIN NDEF Record</string>
+    <string name="nfc_rec_tl">Length of Type field of NDEF Record</string>
+    <string name="nfc_rec_ver">Record version</string>
+    <string name="nfc_rnd_nr">Random number</string>
+    <string name="nfc_rnd_pin">Random PIN</string>
+    <string name="nfc_sav">Save NDEF Message</string>
+    <string name="nfc_ser">Serial number of chip</string>
+    <string name="nfc_msg_max">Maximum NDEF Message size</string>
+    <string name="nfc_spd">Data rate</string>
+    <string name="nfc_stat">Life Cycle state</string>
+    <string name="nfc_stat_Init">INITIALIZED</string>
+    <string name="nfc_stat_None">Not INITIALIZED</string>
+    <string name="nfc_stat_RO">READ-ONLY</string>
+    <string name="nfc_stat_RW">READ/WRITE</string>
+    <string name="nfc_tag1">NFC Forum Type 1 Tag</string>
+    <string name="nfc_tag2">NFC Forum Type 2 Tag</string>
+    <string name="nfc_tag3">NFC Forum Type 3 Tag</string>
+    <string name="nfc_tag4">NFC Forum Type 4 Tag</string>
+    <string name="nfc_tag5">NFC Forum Type 5 Tag</string>
+    <string name="nfc_tag_mf">MIFARE Classic NDEF tag</string>
+    <string name="nfc_tag_ukn">Unknown tag</string>
+    <string name="nfc_tag_ver">Mapping Version of this NFC Forum Tag</string>
+    <string name="nfc_tap">Tap your phone on the NFC tag!</string>
+    <string name="nfc_tap_beam">Tap your phone with another NFC phone!</string>
+    <string name="nfc_tec">Protocol technology</string>
+    <string name="nfc_tecA">NFC-A Technology</string>
+    <string name="nfc_tecB">NFC-B Technology</string>
+    <string name="nfc_tecF">NFC-F Technology</string>
+    <string name="nfc_tecV">NFC-V Technology</string>
+    <string name="nfc_tec_ukn">Unknown technology</string>
+    <string name="nfc_tit_icn">Icon:</string>
+    <string name="nfc_tit_inv_ndef">Invalid NDEF Message</string>
+    <string name="nfc_tit_mem">Memory content</string>
+    <string name="nfc_tit_no_img">No image decoded</string>
+    <string name="nfc_tit_no_ndef">No NDEF Message</string>
+    <string name="nfc_tit_read">Analyze tag</string>
+    <string name="nfc_tit_tlv">TLV area</string>
+    <string name="nfc_tlv_fil_ndef">NDEF File Control TLV</string>
+    <string name="nfc_tlv_fil_prop">Proprietary File Control TLV</string>
+    <string name="nfc_tlv_ndef">NDEF TLV</string>
+    <string name="nfc_tlv_prop">Proprietary TLV</string>
+    <string name="nfc_tlv_term">Terminator TLV</string>
+    <string name="nfc_tlv_ukn">Unknown TLV</string>
+    <string name="nfc_tnf_empty">Empty Type Name Format</string>
+    <string name="nfc_tnf_ext">NFC Forum external Type Name Format</string>
+    <string name="nfc_tnf_mime">Media-Type Name Format</string>
+    <string name="nfc_tnf_rfu">Reserved Type Name Format</string>
+    <string name="nfc_tnf_ukn">Unknown Type Name Format</string>
+    <string name="nfc_tnf_unc">Unchanged Type Name Format</string>
+    <string name="nfc_tnf_uri">Absolute URI Type Name Format</string>
+    <string name="nfc_tnf_wkn">NFC Forum well-known Type Name Format</string>
+    <string name="nfc_ukn_dat">Unknown error data</string>
+    <string name="nfc_ukn_ic">Unknown chip</string>
+    <string name="nfc_man_ukn">Unknown manufacturer</string>
+    <string name="nfc_unini_lck">Uninitialized NFC Tags cannot be locked</string>
+    <string name="nfc_vic">Vicinity technology</string>
+    <string-array name ="nfc_afi">
+        <item>Proprietary</item>
+        <item>Transport</item>
+        <item>Financial</item>
+        <item>Identification</item>
+        <item>Telecommunication</item>
+        <item>Medical</item>
+        <item>Multimedia</item>
+        <item>Gaming</item>
+        <item>Data storage</item>
+        <item>EAN-UCC</item>
+        <item>ISO/IEC 15418 identifiers</item>
+        <item>UPU</item>
+        <item>Air transport</item>
+        <item>RFU</item>
+        <item>RFU</item>
+        <item>RFU</item>
+    </string-array>
+</resources>

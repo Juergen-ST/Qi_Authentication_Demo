@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="internalOnly"
+    package="com.st.wpcath"
+    >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:icon="@mipmap/qi_ath"
+        android:label="@string/app_nam"
+        android:allowBackup="false"
+        android:theme="@style/LibStart"
+        tools:ignore="GoogleAppIndexingWarning"
+        >
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <activity
+            android:name="com.st.wpcath.WpcAthAct"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.st.libsec.WakAct"
+            android:theme="@style/ThmLib.Inv.Wak"
+            android:excludeFromRecents="true"
+             >
+        </activity>
+        <service
+            android:name="com.st.libsec.WpcPrx"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE"
+            >
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/wpc_prx"
+            />
+        </service>
+    </application>
+</manifest>
