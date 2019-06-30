@@ -88,7 +88,6 @@ public class PrxFrg extends ListFragment implements AdapterView.OnItemSelectedLi
         WpcPrx.sFrg = this;                                                                         // Register this fragment at the Qi Authentication application
         WpcPrx.sCach.regCachBtn(mBtn);                                                              // Register the Clear cache button
         Thread.currentThread().setPriority(Thread.MAX_PRIORITY);                                    // Set UI thread set to maximum priority
-
     }
 
     /**
