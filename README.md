@@ -1,3 +1,5 @@
+![Logo](/qi_ath.png)
+
 # Qi Authentication Demo
 
 Demo app to verify and analyze Qi Authentication message exchange at Android phones
