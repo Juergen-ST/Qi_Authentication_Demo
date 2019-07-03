@@ -38,3 +38,11 @@ The demo app is compatible with all Amdroid devices or emulated Android devices 
 - For the emulation of PRx devices an NFC enabled Android phone with Android version 4.4 or higher is needed
 - To run this app on PC with Windows OS or Mac OS the use of an Android emulator is needed
   - This demo app was successfully tested with the NOX emulator on Windows 10
+
+## Installation
+
+To install this demo app download (Qi-demo1.1.apk) and install this file on your Android device or emulator. Make sure that you have enabled the installation of unknown apps on your device.
+
+## Contribution
+
+If you want to contribute to this repository, then read first (CONTRIBUTING.md).
