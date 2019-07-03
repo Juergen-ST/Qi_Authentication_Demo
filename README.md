@@ -41,8 +41,8 @@ The demo app is compatible with all Amdroid devices or emulated Android devices 
 
 ## Installation
 
-To install this demo app download https:Qi-demo1.1.apk and install this file on your Android device or emulator. Make sure that you have enabled the installation of unknown apps on your device.
+To install this demo app download [Qi-demo1.1.apk](Qi-demo1.1.apk) and install this file on your Android device or emulator. Make sure that you have enabled the installation of unknown apps on your device.
 
 ## Contribution
 
-If you want to contribute to this repository, then read first https:CONTRIBUTING.md.
+If you want to contribute to this repository, then read first [CONTRIBUTING.md](CONTRIBUTING.md).
