@@ -4,7 +4,7 @@ We'd love to accept your patches and contributions to this project. There are ju
 
 ## Under which condition can you contribute
 
-Contributions for this repository are made under the Repository License as described at 
+Contributions for this repository are made under the Repository License as described at <br />
 https://help.github.com/en/articles/github-terms-of-service#6-contributions-under-repository-license.
 This is the default terms of service on GitHub ("inbound=outbound").
 That means, if you provide a contribution to this repository, then you agree to provide this contribution under the Apache 2.0 license terms. If you are not willing to provide your contribution under those license terms, then you shall not provide your contribution to this repository.
