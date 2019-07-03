@@ -1,4 +1,4 @@
-![Logo](/qi_ath.png)
+![Logo](/images/qi_ath.png)
 
 # Qi Authentication Demo
 
