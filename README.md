@@ -29,6 +29,8 @@ If this app is installed on two different NFC enabled Android phones, then a Qi 
 
 The purpose of this demo app is the validation of Qi Authentication test implementations and *will not work together with real Qi charging devices.*
 
+This app uses the Spongycastle library (see https://github.com/rtyley/spongycastle) distributed under a license based on the MIT X Consortium license. To view the license, see http://www.bouncycastle.org/licence.html. The Spongycastle library also includes a modified BZIP2 library which is licensed under the Apache 2.0 license. 
+
 ## Compatibility
 
 The demo app is compatible with all Amdroid devices or emulated Android devices with Android version 4.0 or higher:
