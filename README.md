@@ -6,7 +6,7 @@ Demo app to verify and analyze Qi Authentication message exchange at Android pho
 
 ## Functions
 
-This demo app provides the following functions:
+This demo app provides the following functions: <br />
 - Emulates a PTx devices able to be authenticated by an emulated PRx device
   - Emulates at default four different PTx devices
     - One PTX devices has a Secondary Certificate in its Certificate Chain
