@@ -10,7 +10,7 @@ This demo app provides the following functions:
 - Emulates a PTx devices able to be authenticated by an emulated PRx device
   - Emulates at default four different PTx devices
     - One PTX devices has a Secondary Certificate in its Certificate Chain
-    - One PTx device simulates a Feke device to test error behaviour
+    - One PTx device simulates a Fake device to test error behaviour
     - PTx Devices from different Manufacturers are emulated
   - Uses NFC communication to respond to Qi Authentication message requests
 - Emulates a PRx devices requesting a Qi Authentication from the emulated PTx device
