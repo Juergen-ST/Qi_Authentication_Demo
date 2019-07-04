@@ -33,7 +33,7 @@ This app uses the [Spongycastle library](https://github.com/rtyley/spongycastle)
 
 ## Installation
 
-To install this demo app read [Installation](wiki/Installation) and read the [User Manual](wiki/Home).
+To install this demo app read [Installation](/Juergen-ST/Qi_Authentication_Demo/wiki/Installation) and read the [User Manual](/Juergen-ST/Qi_Authentication_Demo/wiki/Home).
 
 ## Contribution
 
