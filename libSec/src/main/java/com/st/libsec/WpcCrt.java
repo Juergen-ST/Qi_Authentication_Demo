@@ -324,7 +324,7 @@ public class WpcCrt extends Certificate {
         final int typ = byt & 0x03;                                                                 // Calculate the Certificate type
         final String des;                                                                           // Certificate description
         switch(typ) {                                                                               // Analyse the Certificate type
-            case TYP_ROOT: des = "Root Certificate"; pos = 0; break;                                // Root Certificate
+            case TYP_ROOT: des = "Root Certificate"; break;                                         // Root Certificate
             case TYP_INT:                                                                           // Intermediate Certificate
                 if (pos == 1) {                                                                     // Manufacturer Certificate?
                     des = "Manufacturer Certificate";                                               // Show Manufacturer Certificate
@@ -339,15 +339,8 @@ public class WpcCrt extends Certificate {
         int ofs = crt.getUsByte();                                                                  // Get the Signature offset
         log.add(WpcLog.TAB + Dbg.logStr((byte)ofs, "Signature offset: " + ofs + " bytes"));         // Log Signature offset
         log.add(WpcLog.TAB + Dbg.logStr(crt.getArray(LEN_SNR), "Serial Number"));                   // Log Serial number
-        if (pos == 0) {                                                                             // Root certificate?
-            logId(crt, pos, "Issuer", log);                                                         // Log the Issuer ID
-        } else {                                                                                    // Another Certificate
-            logId(crt, pos - 1, "Issuer", log);                                                     // Log the Issuer ID
-        }
-        if (typ == TYP_RPU) {                                                                       // Product Unit Certificate?
-            pos = 3;                                                                                // Set position for Product Unit Certificate
-        }
-        logId(crt, pos, "Subject", log);                                                            // Log the Subject ID
+        logId(crt, false, "Issuer", log);                                                           // Log the Issuer ID
+        logId(crt, typ == TYP_RPU, "Subject", log);                                                 // Log the Subject ID
         log.add(WpcLog.TAB + Dbg.hexStr("Public Key", crt.getArray(33)));                           // Log public key
         ofs = ofs - 57;                                                                             // Calculate number of reserved bytes
         if (ofs > 0) {                                                                              // Reserved bytes available?
@@ -360,35 +353,28 @@ public class WpcCrt extends Certificate {
      * Logs the ID
      *
      * @param crt   The WPC Certificate chain
-     * @param pos   The position of the Certificate in the Certificate Chain
+     * @param pu    Flag for product unit Certificate
      * @param nam   The ID name
      * @param log   The log array
      */
-    private static void logId(final @NonNull BytBuf crt, final int pos, final @NonNull String nam, final @NonNull ArrayList<String> log) {
-        final byte[] id = crt.getArray(6);                                                          // Get the ID
+    private static void logId(final @NonNull BytBuf crt, final boolean pu, final @NonNull String nam, final @NonNull ArrayList<String> log) {
+        final byte[] id = crt.getArray(LEN_ID);                                                     // Get the ID
+        final String str = new String(id, AppLib.CHR_ISO).trim();                                   // Get the ID string
         @NonNull String des;                                                                        // ID description
-        switch(pos) {                                                                               // Analyze the Certificate position
-            case 0:                                                                                 // Root certificate
-                des = "WPC Root Certificate";                                                       // Show root Certificate
-                break;
-            case 1:                                                                                 // Manufacturer Certificate
-                byte[] val = Arrays.copyOfRange(id, 2, 6);                                          // Get PTMC
-                try {
-                    int ptmc = Integer.parseInt(new String(val), AppLib.BAS_HEX);                   // Calculate PTMC
-                    des = String.format("PTMC = %04X - %s", ptmc, WpcMan.getMan(ptmc));             // Show the manufacturer
-                } catch (NumberFormatException err) {                                               // Invalid PTMC
-                    des = "invalid PTMC";                                                           // Show invalid PTMC
-                }
-                break;
-            case 2:                                                                                 // Secondary Certificate
-                des = "Secondary Certificate";                                                      // Show the Secondary Certificate
-                break;
-            case 3:                                                                                 // Product Unit Certificate
-                final int qiid = AppLib.bcdToInt(Arrays.copyOf(id, 3));                             // Get the Qi ID
-                des = "Qi ID = " + qiid + " - " + WpcQiId.getName(qiid, WpcMan.ERR_MAN);            // Show the Qi ID
-                break;
-            default:                                                                                // Other Certificate
-                des = "Proprietary";                                                                // Show the Proprietary information
+        if (str.equals(TYP_CRT)) {                                                                  // Root certificate?
+            des = "Root Certificate";                                                               // Show root certificate
+        } else if (str.startsWith(PFX_MAN)) {                                                       // Manufacturer Certificate?
+            try {
+                int ptmc = Integer.parseInt(str.substring(MAN_OFS), AppLib.BAS_HEX);                // Calculate PTMC
+                des = String.format("PTMC = %04X - %s", ptmc, WpcMan.getMan(ptmc));                 // Show the manufacturer
+            } catch (NumberFormatException err) {                                                   // Invalid PTMC
+                des = "invalid PTMC";                                                               // Show invalid PTMC
+            }
+        } else if(pu) {                                                                             // Product Unit Certificate
+            final int qiid = AppLib.bcdToInt(Arrays.copyOf(id, 3));                                 // Get the Qi ID
+            des = "Qi ID = " + qiid + " - " + WpcQiId.getName(qiid, WpcMan.ERR_MAN);                // Show the Qi ID
+        } else {                                                                                    // Secondary Certificate
+            des = "Secondary Certificate: " + str;                                                  // Show the Secondary Certificate
         }
         log.add(WpcLog.TAB + Dbg.logStr(id, nam + " ID: " + des));                                  // Log ID
     }

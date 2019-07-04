@@ -102,12 +102,16 @@ public class WpcQiId {
                 final @NonNull BufferedReader br = new BufferedReader(new InputStreamReader(fis));  // Create the file reader
                 while ((line = br.readLine()) != null) {                                            // Repeat for all file text lines
                     int len = line.indexOf(AppLib.TAB);                                             // Get the position of first tabulator
-                    int qiid = Integer.parseInt(line.substring(0, len));                            // Get the Qi ID of the certified Qi charger
-                    int ofs = len + 1;                                                              // Continue with manufacturer name
-                    len = line.indexOf(AppLib.TAB, ofs);                                            // Get the position of second tabulator
-                    String man = line.substring(ofs, len);                                          // Get the manufacturer name of the certified Qi charger
-                    String type = line.substring(len + 1);                                          // Get the type name of the certified Qi charger
-                    sQiIdTable.add(new WpcQiId(qiid, man, type));                                   // Add the certified Qi charger descriptor
+                    if (len > 0) {                                                                  // Tabulator found?
+                        int qiid = Integer.parseInt(line.substring(0, len));                        // Get the Qi ID of the certified Qi charger
+                        int ofs = len + 1;                                                          // Continue with manufacturer name
+                        len = line.indexOf(AppLib.TAB, ofs);                                        // Get the position of second tabulator
+                        if (len > ofs) {                                                            // Second tabulator found?
+                            String man = line.substring(ofs, len);                                  // Get the manufacturer name of the certified Qi charger
+                            String type = line.substring(len + 1);                                  // Get the type name of the certified Qi charger
+                            sQiIdTable.add(new WpcQiId(qiid, man, type));                           // Add the certified Qi charger descriptor
+                        }
+                    }
                 }
             } catch (IOException | IndexOutOfBoundsException err) {                                 // An error occurred (should never happen)
                 Dbg.log("Cannot load the Qi ID table", err);                                        // Log the error

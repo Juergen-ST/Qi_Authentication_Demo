@@ -28,7 +28,7 @@ import java.util.ArrayList;
  *
  * @author Jürgen Böhler
  */
-public class WpcMan {
+class WpcMan {
 
     /** Example manufacturer code */
     static final int ACME_MAN = 0xCACA;
@@ -37,7 +37,7 @@ public class WpcMan {
     static final int ERR_MAN = -1;
 
     /** Manufacturer code for Root Certificate */
-    public static final int ROOT_MAN = 0xFFFF;
+    static final int ROOT_MAN = 0xFFFF;
 
     private static ArrayList<WpcMan> sMan;                                                          // PTMC table
 
@@ -71,9 +71,11 @@ public class WpcMan {
                 final @NonNull BufferedReader br = new BufferedReader(new InputStreamReader(fis));  // Create the file reader
                 while ((line = br.readLine()) != null) {                                            // Repeat for all file text lines
                     int len = line.indexOf(AppLib.TAB);                                             // Get the position of first tabulator
-                    String man = line.substring(0, len);                                            // Get the manufacturer name
-                    int ptmc = Integer.parseInt(line.substring(len + 3), AppLib.BAS_HEX);           // Get the PTMC
-                    sMan.add(new WpcMan(ptmc, man));                                                // Add the manufacturer descriptor
+                    if (len > 0) {                                                                  // Tabulator found?
+                        String man = line.substring(0, len);                                        // Get the manufacturer name
+                        int ptmc = Integer.parseInt(line.substring(len + 3), AppLib.BAS_HEX);       // Get the PTMC
+                        sMan.add(new WpcMan(ptmc, man));                                            // Add the manufacturer descriptor
+                    }
                 }
             } catch (IOException | IndexOutOfBoundsException err) {                                 // An error occurred (should not happen)
                 Dbg.log("Cannot load the PTMC table", err);                                         // Log the error
