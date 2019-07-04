@@ -31,17 +31,9 @@ The purpose of this demo app is the validation of Qi Authentication test impleme
 
 This app uses the [Spongycastle library](https://github.com/rtyley/spongycastle) distributed under a [license based on the MIT X Consortium license](https://github.com/rtyley/spongycastle/blob/spongy-master/LICENSE.html). The Spongycastle library itself includes a modified BZIP2 library which is licensed under the Apache 2.0 license. 
 
-## Compatibility
-
-The demo app is compatible with all Amdroid devices or emulated Android devices with Android version 4.0 or higher:
-- For the emulation of PTx devices an NFC enabled Android phone with Android Version 4.0 or higher is needed
-- For the emulation of PRx devices an NFC enabled Android phone with Android version 4.4 or higher is needed
-- To run this app on PC with Windows OS or Mac OS the use of an Android emulator is needed
-  - This demo app was successfully tested with the NOX emulator on Windows 10
-
 ## Installation
 
-To install this demo app download [Qi-Demo_1.1.apk](Qi-Demo_1.1.apk) and install this file on your Android device or emulator. Make sure that you have enabled the installation of unknown apps on your device.
+To install this demo app read [Installation](wiki/Installation) and read the [User Manual](wiki/Home).
 
 ## Contribution
 
