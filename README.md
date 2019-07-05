@@ -23,11 +23,11 @@ This demo app provides the following functions:
 - Performs the calculation of the example Certificate Chain used in the Qi Authentication specification
 - Supports the storage of logged exchanges or analysis
 
-If this app is installed on two different NFC enabled Android phones, then a Qi Authentication can be demonstrated between these two phones by using NFC communication: 
+If this app is installed on two different NFC smartphones (these two phones does not necessarily support Qi charging for this demo), then a Qi Authentication can be demonstrated between these two phones by using NFC communication: 
 - One phone is configured to emulate a PTx device
 - The other phone is configured to emulate a PRx device
 
-The purpose of this demo app is the validation of Qi Authentication test implementations and *will not work together with real Qi charging devices.*
+The purpose of this demo app is the validation of Qi Authentication test implementations and *will not work together with real Qi charging devices*. This app is based on the Qi Authentication Specification 1.3 draft 6. This document is only available for members of the [Wireless Power Consortium](https://www.wirelesspowerconsortium.com/). If you are more interested into this development, then [join the WPC](https://www.wirelesspowerconsortium.com/members/join-the-wpc). 
 
 This app uses the [Spongycastle library](https://github.com/rtyley/spongycastle) distributed under a [license based on the MIT X Consortium license](libSec/libs/LICENSE.html). The Spongycastle library itself includes a modified BZIP2 library which is licensed under the Apache 2.0 license. 
 
